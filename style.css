@@ -1,0 +1,79 @@
+html{
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    background-color: black;
+}
+.calculadora{
+    /*border: 1px solid #ccc;*/
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+}
+.telaCalculadora {
+    width: 100%;
+    font-size: 5rem;
+    height: 150px;
+    border: none;
+    background-color: #252525;
+    color: #fff;
+    text-align: right;
+    padding-right: 20px;
+    padding-left: 10px;
+    border-radius: 25px 25px 0px 0px;
+}
+.botoesCalculadora{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: 100px;
+    grid-gap: 10px;
+    padding: 20px;
+    background-color: #23272a;
+    border-radius: 0px 0px 25px 25px;
+}
+.botoesCalculadora button{
+    border-radius: 100px;
+    border: 0px;
+}
+#igual{
+    grid-row-start:5;
+    grid-row-end: 7;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    background-color: #962beb;
+    border-radius: 32px;
+    color:white;
+    font-size: 3rem;
+}
+.delete{
+    background-color: #2c2d31;
+    color: #515753;
+    font-size: 1.5rem;
+}
+.operadores{
+    background-color: #4a355e;
+    font-size: 2.3rem;
+    color: #c582f6;
+}
+.botao, .decimal{
+    background-color:#3b3c40;
+    color:white;
+    font-size: 1.8rem;
+}
+.reset{
+    background-color: #fdb82c;
+    font-size: 2.5rem;
+    color: white;
+    font-weight: bold;
+}
+#extra{
+    background-color: #4c453b;
+    color:  #eab02b;
+    font-size: 1.8rem;
+}
